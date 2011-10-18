@@ -1,0 +1,184 @@
+=encoding utf8
+
+=head1 Repositorio de Documentación
+
+Este repositorio guarda los documentos correspondientes al proyecto de
+migración de la plataforma corporativa de CANTV. 
+
+Las fuentes de los documentos se escriben utilizando la sintaxis de una
+librería derivada de POD llamada C<Pod::PseudoPod>. 
+
+Siga las instrucciones de la siguiente sección para poder generar los
+documentos. 
+
+=head2 Estructura del repositorio. 
+
+=over 
+
+=item Carpeta: B<Documentos>
+
+Esta carpeta contiene una carpeta por cada documento utilizando el patrón
+C<doc_00?> Ejemplo: 
+
+=over 
+
+=item doc_001 
+
+=item doc_002
+
+=back
+
+Este sera el identificador del documento. 
+
+=back 
+
+=head2 Instrucciones para construir los documentos. 
+
+Para construir un documento, debemos conocer el identificador del documento que
+queremos construir y asignar este identificador a la variable de entorno
+C<DOC>, y utilizar la utilidad B<make> de la siguiente manera: 
+
+ $ DOC=doc_001 make 
+
+La instrucción anterior, va a construir los siguientes archivos: 
+
+ Documentos/doc_001/build/pdf/doc_001.pdf
+ Documentos/doc_001/build/html/chapter_??.html
+ Documentos/doc_001/build/latex/chapter_??.tex
+
+=head2 Crear un nuevo documento    
+
+Para crear un nuevo documento puede utilizar el script
+C<tools/build_document.pl>. Este script se encarga de crear la estructura de
+directorios y archivos necesarios para el documento, adicionalmente consulta el
+título del documento. Debe indicar el identificador del documento.  
+
+ $ perl tools/build_document.pl doc_002 
+
+
+=head2 Instrucciones para escribir los documentos.
+
+Los capítulos se encuentran en la carpeta B<Documentos/doc_???/src/>, y siguen la
+nomenclatura chapter_??.pod, donde ?? es el número del capítulo, comenzando por
+01 y así sucesivamente. 
+
+Los capítulos se escriben usando el módulo C<Pod::PseudoPod>, que es una extensión
+de POD para crear libros. En este sentido recomendamos la lectura de los
+siguientes dos manuales. 
+
+    $ perldoc perlpod
+
+    $ perldoc Pod::PseudoPod::Tutorial 
+
+Tambien puede fijarse en la sintaxis utilizada en los capítulos ya existentes.
+
+Adicionalmente, se recomienda evitar el uso de tabulador dentro de los ficheros
+POD, configure su editor de texto para que reemplace los TABs por 4 espacios en
+blanco. 
+
+=head3 Incluir Imágenes    
+
+Para incluir una imagen, debemos copiarla a la carpeta de C<Imagenes> del
+proyecto y utilizar la siguiente sintaxis en POD: 
+
+	=begin figure graphic Título de la Imagen
+	
+	Z<Título de la Imagen>
+	
+	F<Imagenes/covetel.png>
+	
+	=end figure 
+
+Por favor crear carpetas para cada documento. 
+
+=head3 Comandos
+
+Para escribir comandos, debe utilizar la siguiente sintaxis (Sangria de 4
+espacios para cada linea de comandos)
+
+    =begin screen 
+    
+        $ ls / 
+        $ rm -f -r /
+
+    =end screen
+
+=head3 Código Fuente
+
+Para escribir código fuente, debe utilizar la siguiente sintaxis: 
+
+    =begin programlisting
+
+        use Data::Dumper
+        my $ticket = RT::Client::REST->new();
+        print Dumper $ticket;
+
+    =end programlisting
+
+=head2 Sobre el editor de textos
+
+Puede usar su editor de textos de preferencia, si no tiene uno, le recomendamos
+que use VIM. Lo único que le pedimos es que remplace los caracteres TABs por
+espacios, que el tamaño de la identacion sea de cuatro (4) espacios en blanco y
+que conserve el charset original del proyecto, el cual regularmente es UTF-8.
+
+Adicionalmente, nos gusta tener lineas de 80 caracteres de longitud, por favor
+configure su editor de textos de preferencia para que las lineas no sean
+mayores a 80 caracteres.
+
+Si su editor de textos de preferencia es VIM, a continuación puede usar las
+siguientes directivas en el archivo de configuración C<~/.vimrc> para ajustar
+estos valores.
+
+ filetype indent on
+ set autoindent
+ set tw=79
+ syntax on
+ set encoding=utf8
+ set tabstop=4
+ set shiftwidth=4
+ set expandtab
+ set nu
+
+Puede seguir algunos consejos en la dirección
+L<http://wiki.covetel.com.ve/covetel/documentacion>
+
+=head1 Glosarios
+
+=head2 Referenciar un Término
+
+La referencia de un término hacia el glosario debe hacerse en el documento .pod
+en el cual se encuentre el término.
+Identificando el termino a referenciar de la siguiente manera: 
+
+    M<termino>
+
+ejemplo:
+
+ M<LDAP> son las siglas de Lightweight Directory Access Protocol (en español
+ Protocolo Ligero de Acceso a Directorios) que hacen referencia a un protocolo
+ a nivel de aplicación el cual permite el acceso a un servicio de directorio
+ ordenado y distribuido para buscar diversa información en un entorno de red.
+
+=head2 Agregar Términos a la base de datos
+
+Para incluir términos en la base de datos del glosario se debe ejecutar el
+script:
+
+    $ perl tools/add_term.pl
+
+Seguir con los pasos contenidos en el script.
+
+=head1 Dependencias
+
+Las dependencias de este repositorio pueden instalarse con el siguiente comando
+en Debian. 
+
+ # aptitude install make perl-doc libhtml-parser-perl \
+ texlive-latex-extra vim xindy libhtml-entities 
+
+=head1 Autor
+
+Walter Vargas -- walter@covetel.com.ve
+
+

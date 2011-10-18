@@ -1,0 +1,79 @@
+\documentclass[letterpaper,oneside,spanish]{scrbook}
+\usepackage{geometry}
+\geometry{
+ headsep=12mm
+}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{array}
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{titleref}
+\usepackage[colorlinks=false]{hyperref}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage[
+ilines, 
+komastyle, 
+headsepline
+]{scrpage2}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\setcounter{tocdepth}{4}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ihead
+[
+    \includegraphics{Imagenes/iut.png}
+]
+{
+    \includegraphics{Imagenes/iut.png}
+}
+\ohead
+[
+    \includegraphics{Imagenes/meu.png}
+]
+{
+    \includegraphics{Imagenes/meu.png}
+}
+
+\cfoot[
+\begin{tabular}{|l|l|r|}
+    \hline
+    \multicolumn{3}{|m{14.5cm}|}{{\bfseries Título:} 
+        \input{titulo.tex} 
+    }\\
+    \hline
+    {\bfseries Fecha:} \today &
+    {\bfseries Revisión: } v\input{version.tex} & 
+    {\bfseries Página:} \pagemark/\pageref{LastPage} \\
+    \hline
+\end{tabular}
+]{
+\begin{tabular}{|l|l|r|}
+    \hline
+    \multicolumn{3}{|m{14.5cm}|}{{\bfseries Título:} 
+        \input{titulo.tex} 
+    }\\
+    \hline
+    {\bfseries Fecha:} \today &
+    {\bfseries Revisión: } v\input{version.tex} & 
+    {\bfseries Página:} \pagemark/\pageref{LastPage} \\
+    \hline
+\end{tabular}
+}
+
+\publishers{lilibeth@covetel.com.ve}
+\publishers{waltervargas@gmail.com}
+\begin{document}
+\input{portada.tex}
+
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\input{chapters.tex}
+\end{document}
