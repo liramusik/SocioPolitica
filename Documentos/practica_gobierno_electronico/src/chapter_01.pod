@@ -1,1 +1,53 @@
-=head0 Capitulo Ejemplo
+=head0 Alcaldía del Municipio Libertador, Estado Mérida, Venezuela =
+
+Z<Alcaldía del Municipio Libertador>
+
+=head1 Contenido de la Plataforma
+
+Z<Contenido de la Plataforma>
+
+B<Navegación por el Portal:>
+
+Al navegar por el portal web de la Alcaldía Libertador de la Ciudad de Mérida,
+encontramos lo siguiente:
+
+=over
+
+=item Cuenta con un website con gran cantidad de información.
+
+=item El portal tiene 2 menús principales: uno general de información que
+contiene: un botón de inicio, botón del mapa del portal, botón de atención al
+ciudadano, botón de directorio de la ciudad, botón de noticias, botón de
+documentos, botón de agenda de la ciudad, botón de preguntas frecuentes y botón
+de número de emergencia.
+
+Y el segundo menú principal, se encuentra resaltado con imágenes de un tamaño
+mayor al del menú general que contiene: un botón de trámites, servicios y
+programas, un botón de gerencia e institutos, un botón de parroquias y
+registros, un botón de misión, un botón de el alcalde, un botón de instructivos
+y ordenanzas y planillas.
+
+=item Tiene contenido multimedia entre lo que podemos mencionar: imágenes del
+municipio, imágenes del resumen de las noticias, vídeos alusivos al Estado
+Mérida.
+
+=item Presenta una sección resumen de noticias en la parte central del portal.
+
+=item Tiene dos segmentos laterales que sirven de ayudas para el usuario del
+portal, para todos los servicios que ofrece la alcaldía a sus ciudadanos.
+
+=item Cuenta con un sección de enlaces a otros portales.
+
+=item Adicionalmente cuenta con un enlace informativo de las redes sociales a
+las que se encuentra suscrita la alcaldía.
+
+=item Un enlace de solicitudes de información electrónica o material multimedia
+que pertenezcan al Municipio o al Estado.
+
+=item Al final de los enlaces y menús presenta la sección de noticias completas
+al final del website y varios enlaces que muestran todas las noticias que han
+sido publicadas en la web.
+
+=over 
+
+=back
