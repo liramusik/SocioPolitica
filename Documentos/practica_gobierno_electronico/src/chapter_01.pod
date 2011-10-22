@@ -1,7 +1,7 @@
 =head0 Análisis de las Alcaldías del: Municipio Libertador, Estado Mérida,
-Venezuela y el Ayuntamiento de Guadalajara, Estado Jalisco, México =
+Venezuela y el Ayuntamiento de Guadalajara, Estado Jalisco, México
 
-Z<Alcaldía del Municipio Libertador>
+Z<alcaldiadelmunicipiolibertador>
 
 =head1 Contenido de la Plataforma de la Alcaldía del Municipio Libertador del
 Estado Mérida
@@ -54,8 +54,6 @@ sido publicadas en la web.
 
 =item El portal cuenta con contenido descargable, por ejemplo leyes y
 planillas, además cuenta con un formulario de contactos para el público.
-
-=over 
 
 =back
 
