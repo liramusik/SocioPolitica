@@ -1,19 +1,22 @@
-=head0 Alcaldía del Municipio Libertador, Estado Mérida, Venezuela =
+=head0 Análisis de las Alcaldías del: Municipio Libertador, Estado Mérida,
+Venezuela y el Ayuntamiento de Guadalajara, Estado Jalisco, México =
 
 Z<Alcaldía del Municipio Libertador>
 
-=head1 Contenido de la Plataforma
+=head1 Contenido de la Plataforma de la Alcaldía del Municipio Libertador del
+Estado Mérida
 
-Z<Contenido de la Plataforma>
+Z<Contenido de la Plataforma Alcaldía del Municipio Libertador>
 
-B<Navegación por el Portal:>
+=head2 Navegación por el Portal
 
 Al navegar por el portal web de la Alcaldía Libertador de la Ciudad de Mérida,
 encontramos lo siguiente:
 
 =over
 
-=item Cuenta con un website con gran cantidad de información.
+=item Cuenta con un website con gran cantidad de información valiosa para el
+cyber-ciudadano. 
 
 =item El portal tiene 2 menús principales: uno general de información que
 contiene: un botón de inicio, botón del mapa del portal, botón de atención al
@@ -36,10 +39,11 @@ Mérida.
 =item Tiene dos segmentos laterales que sirven de ayudas para el usuario del
 portal, para todos los servicios que ofrece la alcaldía a sus ciudadanos.
 
-=item Cuenta con un sección de enlaces a otros portales.
+=item Cuenta con un sección de enlaces a otros portales tanto educativos,
+turísticos e informativos del Estado Mérida
 
 =item Adicionalmente cuenta con un enlace informativo de las redes sociales a
-las que se encuentra suscrita la alcaldía.
+las que se encuentra suscrita la alcaldía, como twitter y facebook.
 
 =item Un enlace de solicitudes de información electrónica o material multimedia
 que pertenezcan al Municipio o al Estado.
@@ -48,6 +52,111 @@ que pertenezcan al Municipio o al Estado.
 al final del website y varios enlaces que muestran todas las noticias que han
 sido publicadas en la web.
 
+=item El portal cuenta con contenido descargable, por ejemplo leyes y
+planillas, además cuenta con un formulario de contactos para el público.
+
 =over 
+
+=back
+
+=head2 Conclusiones y Recomendaciones para el portal alcaldialibertador-merida.gob.ve
+
+Como parte de la evaluación como cyber-usuarios del portal, y además como
+técnicos especialistas en el área de tecnologías de desarrollo web podemos realizar
+las siguientes recomendaciones, con el fin de formar parte en el mejoramiento y
+mejor desempeño de éste.
+
+=over
+
+=item El portal cuenta con una gran cantidad de información, que actualmente se
+encuentra distribuida entre las secciones del portal de forma no equivalente o
+equitativa, es decir, hay una recarga, por ejemplo, la página inicial del
+portal web, que al ser consultada por el cyber-usuario tiende a convertir en
+una búsqueda dificultosa de aquello que deseamos encontrar, por la gran
+cantidad de información que contiene.
+
+=item La diagramación del portal puede mejorar en gran medida si se evita
+utilizar imágenes de gran tamaño para los menús principales. Además que el uso
+de dos menús principales hace más complicada la búsqueda de lo que el
+cyber-usuario necesita.
+
+=item El portal fue implementado con un Manejador de Contenidos (sus siglas en
+ingles CMS) denominado Drupal U<http://drupal.org/>. Se recomienda aplicar
+todos los parches de seguridad correspondientes a este manejador de contenidos,
+ya que su principal debilidad es la seguridad. N<Para mayor información visite
+U<http://www.drwsoluciones.net/blogs/joomla-vs-drupal-bugs-y-exploits>>
+
+=item Cuando el cyber-usuario accede a un enlace del portal, o aun enlace de
+los menús principales, no cuenta con la opción de retornar a través de un
+enlace de referencia C<Atras> o C<Volver> al menú anterior, eso hace que la
+navegación dentro de las páginas del portal sea incomodo para el cyber-usuario.
+
+=back
+
+=head1 Contenido de la Plataforma del Ayuntamiento de Guadalajara, Estado
+Jalisco, México
+
+Z<Contenido de la Plataforma Ayuntamiento de Guadalajara, Estado
+Jalisco, México>
+
+=head2 Navegación por el Portal
+
+Al navegar por el portal web del Ayuntamiento de Guadalajara en la Ciudad de
+Jalisco, encontramos lo siguiente:
+
+=over
+
+=item El portal cuenta con un menú principa con información específica y
+referente a los cyber-usuarios, los botones que podemos encontrar son:
+Ciudadano, Emprendedor, Visitante, Transparencia.
+
+=item Ofrece a los usuarios en su vista principal un resume de noticias de la
+región que cuenta con contenido multimedia (imágenes). Ofrece los enlaces para
+cada una de las noticias para que el cyber-usuario lo pueda consultar.
+
+=item Cuenta con menú de secciones que atienden necesidades específicas del
+cyber-ciudadano, por ejemplo la siguientes secciones: Principales, Programas,
+Trámites, Participación ciudadana, Concursos y Licitaciones
+
+=item Presenta secciones gráficas, que son enlaces a: Correo Electrónico
+interno del ayuntamiento, Aplicaciones para otras plataformas como por ejemplo
+Apple.
+
+=item Adicionalmente cuenta con un enlace informativo de las redes sociales a
+las que se encuentra suscrito el Ayuntamiento, como Facebook, Twitter, RSS,
+Flickr y Youtube.
+
+=item Cuenta con un calendario de actividades en el portal para índicar eventos
+y actividades correspondientes al ayuntamiento.
+
+=item Existe una sección de Banners que direccionan al cyber-usuario a diversas
+actividades culturales e informativas del Ayuntamiento. Por ejemplo: un banner
+del Museo de Paleontología, un banner de la Agenda Cultural del Ayuntamiento
+para Octubre del 2011, un banner de la Rehabilitación de la Glorieta y un
+banner para la publicación del Programa de Pavimentación.
+
+=item Tiene partícularmente una sección con las etiquetas de los tópicos o
+temas tocados dentro del portal, esto permite acceder a ciertos contenidos de
+manera más rápida y fácil.
+
+=item Al final del portal cuentan con un menú informativo del Ayuntamiento,
+entre lo que podemos observar: del Ayuntamiento, Destacados, De interés.
+
+=item Cuentan con un mapa del portal, un botón de inicio y un formulario de
+contactos para las personas que deseen información adicional a la presentada en
+el portal.
+
+=back
+
+=head2 Conclusiones y Recomendaciones para el portal http://portal.guadalajara.gob.mx
+
+=over
+
+=item El portal tiene un diseño que permite al usuario navegar de forma cómoda
+dentro del portal, ya que el cambio entre páginas no se nota debido a la forma
+en la que fue diseñado el mismo, es de fácil usabilidad que permiten al
+cyber-usuario usar el portal con la información referenciada en el porta.
+
+=item No se observan recomendaciones a nivel de usuario para este portal
 
 =back
